@@ -1,2 +1,16 @@
-- 사소한 질문도 괜찮으니까 소통 많이하기!
-- 피드백 많이 하고 서로 요청 사항 있으면 언제든 말하기!
+- 
+# _🎥 Movie Kiosk_ (9조)
+
+---
+
+## 🙋 Team Member
+
+| 이름   | Github                                         |
+| ------ | ---------------------------------------------- |
+| 진솔미 | [@solmi26](https://github.com/solmi26)         |
+| 이원진 | [@Wonjin0138](https://github.com/Wonjin0138)   |
+| 김다현 | [@KIMDAHYUN98](https://github.com/KIMDAHYUN98) |
+| 문기용 | [@mkyoung24](https://github.com/mkyoung24)     |
+| 강병관 | [@G-Lake](https://github.com/G-Lake)           |
+
+---
