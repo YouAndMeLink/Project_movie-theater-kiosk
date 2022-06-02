@@ -30,4 +30,4 @@
 > >
 > > > 외부 라이브러리
 > > >
-> > > > ojdbc8.jar/HikariCP.jar/sql.jar
+> > > > ojdbc8.jar/HikariCP.jar
