@@ -13,3 +13,21 @@
 | 강병관 | [@G-Lake](https://github.com/G-Lake)           |
 
 ---
+
+## 📌 _Environment_
+
+> UI
+>
+> > Java Swing
+
+> Programming Language
+>
+> > Java
+
+> DataBase
+>
+> > Oracle
+> >
+> > > 외부 라이브러리
+> > >
+> > > > ojdbc8.jar/HikariCP.jar/sql.jar
