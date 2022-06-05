@@ -271,9 +271,9 @@ public class ProductList {
 	<summary>Cancel Seats & Rollback Button</summary>      
 	
 > Problem
-> > 좌석을 고르는 과정에서 좌석을 선택한 후 마음이 바뀌어서 골랐던 것을 취소하기 위해 <br>한 번 더 클릭하면 원래의 색으로 돌아와야 했으나 버튼의 색깔을 받아오는 메서드를 찾지 못해 막혔었습니다.
+> > 좌석을 고르는 과정에서 좌석을 선택한 후 마음이 바뀌어서 골랐던 것을 취소하기 위해 <br>한 번 더 클릭하면 원래의 색으로 돌아와야 했으나 버튼의 색깔을 받아오는 메서드를 찾지 못함.
 > > > Solution 
-> > > >각 버튼이 현재 선택이 되었는지 안되었는지 담아둘 배열을 전역변수로 만들어 두어 상태를 확인할 수 있다면 될 것이라고 생각했습니다<br> 클래스에 boolean 타입의 배열을 만든뒤 false상태에서 클릭을 했을 경우 해당 index의 값을 true로 바꿔주고 색깔을 바꿔주었으며<br> true에서 다시 클릭을 했을 경우 false로 바꾼 뒤 원래의 색깔로 나오게 만들었습니다.
+> > > >각 버튼이 현재 선택이 되었는지 안되었는지 담아둘 배열을 전역변수로 만들어 두어 상태를 확인할 수 있다면 될 것 같다는 아이디어 반영.<br> 클래스에 boolean 타입의 배열을 만든뒤 false상태에서 클릭을 했을 경우 해당 index의 값을 true로 바꿔주고 색깔을 바꿔주었으며<br> true에서 다시 클릭을 했을 경우 false로 바꾼 뒤 원래의 색깔로 나오게 수정했다.
 
 ```java
 	if(SeatChoice_1.th1e_btn_selected[index - 1])
@@ -304,9 +304,9 @@ public class ProductList {
 	<summary>Duplicate selection error</summary>
 	
 > Problem
-> > 인원수를 고르는 과정에서 인원수를 클릭한 뒤 마음이 바뀌어 다른 영화를 선택했을 때 <br>인원수를 고르는 프레임에 기존에 클릭돼있던 버튼이 그대로 클릭되어있는 문제를 겪었었습니다
+> > 인원수를 고르는 과정에서 인원수를 클릭한 뒤 마음이 바뀌어 다른 영화를 선택했을 때 <br>인원수를 고르는 프레임에 기존에 클릭돼있던 버튼이 그대로 클릭되어있는 문제가 발생함.
 > > > Solution 
-> > > > 매번 인원수를 고르는 프레임이 떴을때 마다 버튼들을 초기화해준다면 해결이 될 것이라고 생각했습니다<br>인원수를 고르다가 또는 좌석을 고르다가 다른 영화를 보고 싶어진 경우 이전으로 돌아가도 항상 0명에 버튼이 체크돼있도록 만들었습니다
+> > > > 인원수를 고르는 프레임이 떴을때 마다 버튼들을 초기화해준다면 해결이 될 것 같다는 아이디어 반영.<br>인원수를 고르다가 또는 좌석을 고르다가 다른 영화를 보고 싶어진 경우 이전으로 돌아가도 항상 0명에 버튼이 체크돼있도록 수정함.
 
 ```java
 for(int i = 1; i < btns1.size(); i++) {
@@ -341,9 +341,9 @@ for(int i = 1; i < btns1.size(); i++) {
 	<summary>Check Type Verification</summary>   
 	
 > Problem
-> > 좌석 선택중 장애인석의 숫자는 한정적인데 장애인이 아닌 사람이 장애인석을 예약하는 경우 오류 메시지를 띄워야 된다고 생각했으나<br> 사람 인원 중에서 장애인의 숫자를 알 수가 없어서 문제였습니다
+> > 좌석 선택중 장애인석의 숫자는 한정적인데 장애인이 아닌 사람이 장애인석을 예약하는 경우 오류 메시지를 띄워야 된다고 생각했으나<br> 사람 인원 중에서 장애인의 숫자를 알 수가 없었음.
 > > > Solution 
-> > > > 인원수를 전체인원이 아닌 장애인 인원을 변수에 따로 저장해두어 인원 수를 확인하면 될 것이라고 생각했습니다<br>장애인 인원수보다 많은 수를 예약하려고 하면 에러 메시지를 나오게 설정해두어서 장애인석은 장애인만 예약할 수 있게 했습니다
+> > > > 인원수를 전체인원이 아닌 장애인 인원을 변수에 따로 저장해두어 인원 수를 확인하면 될 것 같다는 아이디어 반영.<br>장애인 인원수보다 많은 수를 예약하려고 하면 에러 메시지를 나오게 설정해두어서 장애인석은 장애인만 예약할 수 있게 수정.
 
 ```java
 if(PeopleCheck.disable_cnt == 0)
@@ -386,122 +386,6 @@ if(PeopleCheck.disable_cnt == 0)
 
 </details>
 
-<details>
-	<summary>Exception in thread "AWT-EventQueue-0" java.lang.NumberFormatException: null</summary>    
-	
-> Problem
-> > 생성자에서 date(일별 날짜) 값을 받아온 후 달력에서 날짜의 숫자가 한 좌석일 때 앞에 "0"이 붙여질 수 있도록 생성해놓은
- getSales() 함수에서 date값을 사용해야 하는데, 생성자에 선언한 date 이전에 getSales() 함수를 불러왔기 때문에 null값이 나온다.
-> > > Solution 
-> > > > this.date = date; 밑에 getSales();를 입력해주어야 오류가 해결이 된다.
-
-```java
-public S2Panel3(String date) {
-		this.date = date;
-		getSales();
-		setBackground(Color.CYAN);
-		setBounds(12, 229, 362, 134);
-		setLayout(null);
-		l1 = new JLabel("상 품");
-		l2 = new JLabel("수량 : " + count);
-		l3 = new JLabel("가격 : " + sales);
-
-		l1.setFont(new Font("굴림", Font.PLAIN, 50));
-		l1.setHorizontalAlignment(SwingConstants.CENTER);
-		l1.setBounds(12, 10, 140, 114);
-
-		l2.setFont(new Font("굴림", Font.PLAIN, 20));
-		l2.setBounds(164, 10, 200, 50);
-
-		l3.setFont(new Font("굴림", Font.PLAIN, 20));
-		l3.setBounds(164, 70, 200, 50);
-
-		add(l1);
-		add(l2);
-		add(l3);
-	}
-
-```
-
-</details>
-	
-<details>
-	<summary>Design Size Error</summary>
-
-- 상품들을 타입별로 나눠서 버튼으로 만들어주는 메소드들이다.
-- 처음에는 버튼에 이미지와 글(가격, 이름)로 두개로만 메소드를 나눠서 했었다.
-- 두개로만 했을때는 이미지의 사이즈를 줄이는데 제각각으로 바껴서 디자인에 오류가 생겼다.
-- 또한 버튼에 글 작성하는 방법이 JLabel이 있었는데 JLabel로 여러개 나눠서 하는것보다 <br>html로 하는 방법이 효율적이라 생각해서 html로 만들어주는 메소드를 만들었다.
-
-```java
-/**
-	products들의 이름과 가격를 gui에 보여주기위해 html를 활용해 text를 만들었다.
-	@param name : 제품들 이름
-	@param price : 제품들 가격
-	@return : ArrayList<String>
- */
-public ArrayList<String> p_text(ArrayList<String> name, ArrayList<Integer> price) {
-	ArrayList<String> result = new ArrayList<>();
-
-    for (int i = 0; i < name.size(); ++i) {
-		DecimalFormat formatter = new DecimalFormat("###,###");
-		result.add("<HTML>" + name.get(i) + "<br>" + formatter.format(price.get(i)) + "원</HTML>");
-	}
-	return result;
-}
-
-/**
-	ImageIcon ArrayList에 img_path의 사진을 넣어준다.
-	img사이즈도 줄어줌
-	@param image_paths : 여러 이미지 path들이 들어가 있음
-	@return ArrayList<ImageIcon>
-*/
-public ArrayList<ImageIcon> makeImageIconArray(ArrayList<String> image_paths) {
-	ArrayList<ImageIcon> icons = new ArrayList<>();
-
-	for (String path : image_paths) {
-		ImageIcon originIcon = new ImageIcon(path);
-		Image resizeIcon = originIcon.getImage().getScaledInstance(150, 150, Image.SCALE_SMOOTH);
-
-		icons.add(new ImageIcon(resizeIcon));
-	}
-	return icons;
-}
-
-/**
-	img와 위에서 만든 name, price있는 text를 가지고 여러개의 버튼 만들기
-	@param icons : 각각의 제품 img들이 들어있다.
-	@param texts : 각각의 제품 name, price들이 들어있다.
-	@return ArrayList<JButton>
-*/
-public ArrayList<JButton> btn_list(ArrayList<ImageIcon> icons, ArrayList<String> texts){
-	ArrayList<JButton> btns = new ArrayList<>();
-
-	for (int i = 0; i < icons.size(); ++i) {
-		btns.add(new JButton(texts.get(i),icons.get(i)));
-		btns.get(i).setBackground(Color.white);
-	}
-	return btns;
-}
-
-/**
- 	타입에 맞는 products들의 정보 가져와서 ArrayList에 담아주기
- 	@param products ArrayList에 제품 정보 담기
-	@param typeName 선택된 상품 type
-	@return ArrayList<Products>
-*/
-public ArrayList<Products> typeOfproduct(ArrayList<Products> products, String typeName){
-	ArrayList<Products> array = new ArrayList<>();
-
-	for (int i = 0; i < products.size(); ++i) {
-		if (products.get(i).getType().equals(typeName)) {
-			array.add(products.get(i));
-		}
-	}
-	return array;
-}
-```
-
 </details>
 	
 <details>
@@ -510,18 +394,18 @@ public ArrayList<Products> typeOfproduct(ArrayList<Products> products, String ty
 > Problem
 >
 > > 영화 시간을 선택하면 그에 따른 영화 정보와 다른 정보들이 같이 와야 하는 상황이 있었는데<br>
-> > 버튼에서 가져올 수 있는것은 영화가 시작하는 시간 하나라서 이것으로 다른 정보들을 연결해서 찾기가 어려웠다<br>
-> > 만약 같은 시간대에 상영하는 다른 영화들이 존재하면 어떤 영화의 시간인지 알 수 없기에 원하는 정보를 얻을 수 없었다<br>
+> > 버튼에서 가져올 수 있는것은 영화가 시작하는 시간 하나라서 이것으로 다른 정보들을 연결해서 찾기가 어려웠음<br>
+> > 만약 같은 시간대에 상영하는 다른 영화들이 존재하면 어떤 영화의 시간인지 알 수 없기에 원하는 정보를 얻을 수 없었음<br>
 > >
 > > > Solution
 > > >
 > > > > 버튼을 만들 때 영화마다 영화 정보가 담겨있는 클래스를 따로 만들어서 <br>
-> > > > 버튼의 리스너 기능을 추가할 때 그에 맞는 영화 클래스 정보를 담아 놓는 방법을 선택했다<br>
+> > > > 버튼의 리스너 기능을 추가할 때 그에 맞는 영화 클래스 정보를 담아 놓는 방법을 선택함.<br>
 > > > > 1번 영화를 선택하면 버튼이 구현되어 있는 클래스 자체에 1번 영화의 정보를 담아 놓고
 > > > > 시간 정보는 버튼의 이름에 설정해놓은 다음<br>
 > > > > 버튼을 클릭하면 1번 영화가 담겨져 있는 클래스로 넘어가고<br>
 > > > > 클래스에는 이미 데이터베이스에서 가져온 시간 정보와 영화 정보들이 담겨 있기에<br>
-> > > > 시간대를 비교해서 해당 영화가 가지고 있는 다른 정보들을 가져오는 방식을 사용했다<br>
+> > > > 시간대를 비교해서 해당 영화가 가지고 있는 다른 정보들을 가져오는 방식을 사용함.<br>
 
 ```java
 
@@ -529,22 +413,6 @@ public ArrayList<Products> typeOfproduct(ArrayList<Products> products, String ty
 ```
 
 </details>
-
----
-
-## 🔆 _Best Code_
-
-> `영화관 좌석표`
->
-> > 간단설명
-
-```java
-public class BootSpringBootApplication {
-  public static void main(String[] args) {
-    System.out.println("자랑하고 싶은 코드");
-  }
-}
-```
 
 ---
 
