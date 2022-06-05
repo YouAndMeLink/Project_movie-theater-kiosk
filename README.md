@@ -36,7 +36,7 @@
 
 ### 📌 _ER Diagram_
 
-![erd](ERD.jpg)
+![erd](https://raw.githubusercontent.com/YouAndMeLink/Project_movie-theater-kiosk/main/MovieKiosk/image/movie/ERD.jpg?token=GHSAT0AAAAAABU2EW7EEAU5TIDADBUKHN6KYU4G6HQ)
 
 ---
 
