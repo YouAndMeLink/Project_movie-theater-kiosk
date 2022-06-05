@@ -528,7 +528,7 @@ if(PeopleCheck.disable_cnt == 0)
 <summary>GUI 화면 영상</summary>
 <div markdown="1">
 
-![KakaoTalk_Photo_2021-08-24-12-40-06 008](./MovieKiosk/img/media/%ED%99%94%EB%A9%B4%20%EC%98%81%EC%83%81.mp4)
+https://www.youtube.com/watch?v=glsCLeQRryQ
 
 </div>
 </details>
