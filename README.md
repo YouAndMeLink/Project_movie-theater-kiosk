@@ -34,7 +34,7 @@
 
 ---
 
-### 📌 _ER Diagram_
+## 📌 _ER Diagram_
 
 ![erd](./MovieKiosk/image/movie/ERD.jpg)
 
@@ -549,3 +549,10 @@ if(PeopleCheck.disable_cnt == 0)
 
 </div>
 </details>
+
+## 📌 _Reference_
+
+- https://github.com/TeamProjectGroupNo1/movieKiosk
+- https://github.com/seohyun319/Elderly_People_Kiosk_Project
+- https://github.com/WoojaeJang/CafeKioskSystem-JavaWebProject
+- https://woongbin96.tistory.com/m/70
