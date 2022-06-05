@@ -26,7 +26,7 @@
 
 > DataBase
 >
-> > Oracle
+> > Oracle, DBeaver
 > >
 > > > 외부 라이브러리
 > > >
@@ -419,28 +419,37 @@ if(PeopleCheck.disable_cnt == 0)
 ## 📸 _ScreenShot_
 
 <details>
-<summary>메인 화면</summary>
+<summary>로딩 화면</summary>
 <div markdown="1">
 
-![main](https://user-images.githubusercontent.com/77534863/130552143-ed417539-f301-4676-a801-4da8b16ce446.jpeg)
+![main](./MovieKiosk/image/md/%EB%A1%9C%EB%94%A9%EC%B0%BD.jpg)
 
 </div>
 </details>
 
 <details>
-<summary>가장 빠른 영화</summary>
+<summary>메인 화면</summary>
 <div markdown="1">
 
-![KakaoTalk_Photo_2021-08-24-12-40-06 012](https://user-images.githubusercontent.com/77534863/130552300-6e5e3df6-cbad-4284-b035-5ab81561cab6.jpeg)
+![main](./MovieKiosk/image/md/%EB%A9%94%EC%9D%B8%ED%99%94%EB%A9%B4.jpg)
+
+</div>
+</details>
+
+<details>
+<summary>가장 빨리 볼 수 있는 영화</summary>
+<div markdown="1">
+
+![KakaoTalk_Photo_2021-08-24-12-40-06 012](./MovieKiosk/image/md/%EB%B9%A0%EB%A5%B8%EC%98%88%EB%A7%A4.jpg)
 
 </div>
 </details>     
 	
 <details>
-<summary>현장 영화 발권</summary>
+<summary>전체 상영 시간표</summary>
 <div markdown="1">
 
-![KakaoTalk_Photo_2021-08-24-12-40-06 011](https://user-images.githubusercontent.com/77534863/130552392-0f3c0af8-baf3-42f5-b11a-4c519bc7854d.jpeg)
+![KakaoTalk_Photo_2021-08-24-12-40-06 011](./MovieKiosk/image/md/%EC%A0%84%EC%B2%B4.jpg)
 
 </div>
 </details>    
@@ -449,7 +458,7 @@ if(PeopleCheck.disable_cnt == 0)
 <summary>영화 인원 선택</summary>
 <div markdown="1">
 
-![KakaoTalk_Photo_2021-08-24-12-40-06 004](https://user-images.githubusercontent.com/77534863/130553049-c2bff907-c470-4ffb-9641-fc9d0fb31270.jpeg)
+![KakaoTalk_Photo_2021-08-24-12-40-06 004](./MovieKiosk/image/md/%EC%98%88%EB%A7%A4%EC%B0%BD.jpg)
 
 </div>
 </details>     
@@ -459,7 +468,7 @@ if(PeopleCheck.disable_cnt == 0)
 <summary>영화 좌석 선택</summary>
 <div markdown="1">
 
-![KakaoTalk_Photo_2021-08-24-12-40-06 006](https://user-images.githubusercontent.com/77534863/130552449-e2581f16-335a-474e-a85f-e5866a3410da.jpeg)
+![KakaoTalk_Photo_2021-08-24-12-40-06 004](./MovieKiosk/image/md/%EC%98%88%EB%A7%A4%EC%B0%BD2.jpg/)
 
 </div>
 </details>     
@@ -469,14 +478,24 @@ if(PeopleCheck.disable_cnt == 0)
 <summary>영화 티켓 출력</summary>
 <div markdown="1">
 
-![KakaoTalk_Photo_2021-08-24-12-40-06 002](https://user-images.githubusercontent.com/77534863/130552541-a7f47e82-dc79-496e-bfb3-5955bbb6f108.jpeg)
+![KakaoTalk_Photo_2021-08-24-12-40-06 002](./MovieKiosk/image/md/%EC%98%88%EB%A7%A4%EC%99%84%EB%A3%8C.jpg)
 
 </div>
-</details>       
+</details>
+
+<details>
+<summary>예매 번호로 현장 발권</summary>
+<div markdown="1">
+
+![KakaoTalk_Photo_2021-08-24-12-40-06 002](./MovieKiosk/image/md/%ED%98%84%EC%9E%A5%EB%B0%9C%EA%B6%8C.jpg)
+![KakaoTalk_Photo_2021-08-24-12-40-06 002](./MovieKiosk/image/md/%EC%B6%9C%EB%A0%A5.jpg)
+
+</div>
+</details>    
 	
 	
 <details>
-<summary>음식 상품 메인</summary>
+<summary>매점 메인 화면</summary>
 <div markdown="1">
 
 ![KakaoTalk_Photo_2021-08-24-12-40-06 007](https://user-images.githubusercontent.com/77534863/130552585-173b7a7c-d9fa-468f-86d0-9fc50fd2880e.jpeg)
@@ -488,7 +507,7 @@ if(PeopleCheck.disable_cnt == 0)
 <summary>음식 상품 선택</summary>
 <div markdown="1">
 
-![KakaoTalk_Photo_2021-08-24-12-40-06 010](https://user-images.githubusercontent.com/77534863/130552626-a5305f08-e121-4391-a5e1-aab01038f9ff.jpeg)
+![KakaoTalk_Photo_2021-08-24-12-40-06 010](./MovieKiosk/image/md/%EB%A7%A4%EC%A0%90.jpg)
 
 </div>
 </details>     
@@ -498,43 +517,7 @@ if(PeopleCheck.disable_cnt == 0)
 <summary>음식 장바구니 화면</summary>
 <div markdown="1">
 
-![KakaoTalk_Photo_2021-08-24-12-40-06 008](https://user-images.githubusercontent.com/77534863/130552665-9c6d1153-197f-4494-89ca-ce3725aae862.jpeg)
-
-</div>
-</details>      
-	
-<details>
-<summary>음식 원산지 표시판</summary>
-<div markdown="1">
-
-![KakaoTalk_Photo_2021-08-24-12-40-06 009](https://user-images.githubusercontent.com/77534863/130552711-c0e70788-b947-4c37-bcc0-038a7550c8cf.jpeg)
-
-</div>
-</details>     
-	
-<details>
-<summary>음식 재고관리</summary>
-<div markdown="1">
-
-![상품수정완료](https://user-images.githubusercontent.com/77534863/130552807-46bd6490-8c0a-4d8e-856d-d7374b866642.png)
-
-</div>
-</details>     
-	
-<details>
-<summary>영화 예매 화면</summary>
-<div markdown="1">
-
-![KakaoTalk_Photo_2021-08-24-12-40-06 003](https://user-images.githubusercontent.com/77534863/130552881-b12e07e3-6eca-491c-9dd7-5f29a31750ee.jpeg)
-
-</div>
-</details>     
-	
-<details>
-<summary>영화 예매 출력</summary>
-<div markdown="1">
-
-![KakaoTalk_Photo_2021-08-24-12-40-06 005](https://user-images.githubusercontent.com/77534863/130552910-da31fb39-4de3-4b70-bca2-3f1ff2af1768.jpeg)
+![KakaoTalk_Photo_2021-08-24-12-40-06 008](./MovieKiosk/image/md/%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88.jpg)
 
 </div>
 </details>
