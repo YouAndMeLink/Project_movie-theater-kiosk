@@ -31,14 +31,12 @@
 > > > 외부 라이브러리
 > > >
 > > > > ojdbc8.jar/HikariCP.jar/slf4j-api-1.7.21.jar
-<<<<<<< Updated upstream
-=======
 
 ---
 
 ### 📌 _ER Diagram_
 
-![erd](https://user-images.githubusercontent.com/84116965/129391140-79714a8c-9b84-44e0-84d0-d9c5f5ad916e.png)
+![erd](ERD.jpg)
 
 ---
 
@@ -474,4 +472,3 @@ public class BootSpringBootApplication {
 
 </div>
 </details>
->>>>>>> Stashed changes
