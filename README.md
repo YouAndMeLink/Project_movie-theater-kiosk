@@ -14,7 +14,7 @@
 
 ---
 
-## 📌 _Environment_
+## 📝 _Environment_
 
 > UI
 >
@@ -34,13 +34,13 @@
 
 ---
 
-## 📌 _ER Diagram_
+## 📝 _ER Diagram_
 
 ![erd](./MovieKiosk/image/movie/ERD.jpg)
 
 ---
 
-## 📌 _Project_
+## 🍿 _Project_
 
 - 디자인 패턴
 
@@ -160,7 +160,7 @@ public class ProductList {
 
 <!-- ## 📝 _Troubles_ -->
 
-## 📌📝 _Issue_
+## 📝 _Issue_
 
 <details>
 	<summary>ScrollPane</summary>
@@ -550,7 +550,7 @@ if(PeopleCheck.disable_cnt == 0)
 </div>
 </details>
 
-## 📌 _Reference_
+## 📂 _Reference_
 
 - https://github.com/TeamProjectGroupNo1/movieKiosk
 - https://github.com/seohyun319/Elderly_People_Kiosk_Project
